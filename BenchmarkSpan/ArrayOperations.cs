@@ -12,7 +12,7 @@ namespace BenchmarkSpan
         {
             for (var i = 0; i < Array.Length; i++)
             {
-                Array[i] += 10;
+                Array[i] += 11;
             }
         }
 
@@ -20,7 +20,7 @@ namespace BenchmarkSpan
         public void FillArrayWithSpan()
         {
             var span = new Span<int>(Array);
-            span.Fill(10);
+            span.Fill(11);
         }
 
     }
